@@ -1,0 +1,1744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1003</width>
+    <height>764</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QPushButton" name="monthPick">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>10</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(11, 11, 11);
+border: 2px solid;
+border-color: rgb(143, 143, 143);</string>
+   </property>
+   <property name="text">
+    <string>월 선택</string>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="dateStack">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>811</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(4, 4, 4);
+border: 1px solid;
+border-color: rgb(143, 143, 143);</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page_3">
+    <widget class="QComboBox" name="yearIndex">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>20</y>
+       <width>72</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1.2px solid;
+border-color: rgb(150, 150, 150);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>2023년</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="monthIndex">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>20</y>
+       <width>61</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1.2px solid;
+border-color: rgb(150, 150, 150);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>1월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>3월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>4월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>5월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>6월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>7월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>8월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>9월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>10월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>11월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>12월</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_4">
+    <widget class="QComboBox" name="monthIndex1">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>20</y>
+       <width>61</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1.2px solid;
+border-color: rgb(139, 139, 139);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>1월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>3월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>4월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>5월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>6월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>7월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>8월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>9월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>10월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>11월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>12월</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="yearIndex1">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>72</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1.2px solid;
+border-color: rgb(139, 139, 139);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>2023년</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="monthIndex2">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>20</y>
+       <width>61</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1.2px solid;
+border-color: rgb(139, 139, 139);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>1월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>3월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>4월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>5월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>6월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>7월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>8월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>9월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>10월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>11월</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>12월</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="yearIndex2">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>20</y>
+       <width>72</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1.2px solid;
+border-color: rgb(139, 139, 139);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>2023년</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>20</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:0px;</string>
+     </property>
+     <property name="text">
+      <string>~</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="searchButtion">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>20</y>
+       <width>61</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid;
+border-color: rgb(143, 143, 143);
+</string>
+     </property>
+     <property name="text">
+      <string>조회</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="durationPick">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>10</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(11, 11, 11);
+border: 2px solid;
+border-color: rgb(143, 143, 143);</string>
+   </property>
+   <property name="text">
+    <string>기간 선택</string>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="brandInfoStack">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>120</y>
+     <width>811</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(11, 11, 11);</string>
+   </property>
+   <property name="currentIndex">
+    <number>6</number>
+   </property>
+   <widget class="QWidget" name="page"/>
+   <widget class="QWidget" name="page_8">
+    <widget class="QLabel" name="hyundaiOnMonth">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="hyundaiSales">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(11, 11, 11);</string>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ds_2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(11, 11, 11);</string>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(11, 11, 11);</string>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>101</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/resources/hyndai.gif);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_9">
+    <widget class="QLabel" name="kiaOnMonth">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="kiaSales">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ds_3">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>101</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/resources/kia.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_10">
+    <widget class="QLabel" name="genesisOnMonth">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="genesisSales">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ds_4">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>101</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/resources/genesis.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_13">
+    <widget class="QLabel" name="chevorletOnMonth">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="chevorletSales">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ds_5">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>101</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/resources/chevolet.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_14">
+    <widget class="QLabel" name="kgOnMonth">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="kgSales">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ds_6">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>101</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/resources/kg.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_19">
+    <widget class="QLabel" name="renaultOnMonth">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="renaultSales">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ds_7">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>101</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/resources/renault.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_20">
+    <widget class="QLabel" name="bmwOnMonth">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="bmwSales">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ds_8">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_19">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_20">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>101</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/resources/bmw.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_7">
+    <widget class="QLabel" name="benzOnMonth">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="benzSales">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ds_9">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>101</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/resources/benz.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_21">
+    <widget class="QLabel" name="label_25">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>101</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/resources/audi.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="audiSales">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ds_10">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="audiOnMonth">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_22">
+    <widget class="QLabel" name="lexusOnMonth">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lexusSales">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ds_11">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_26">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_27">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>101</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/resources/lexus.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QLabel" name="ds">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>101</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/resources/porsche.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="porscheSales">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>판매량</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="porscheOnMonth">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>60</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>전월 (대비)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_23"/>
+  </widget>
+  <widget class="QStackedWidget" name="contentStack">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>230</y>
+     <width>821</width>
+     <height>521</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page_17">
+    <widget class="QTableWidget" name="specificBrandTable">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>0</y>
+       <width>811</width>
+       <height>521</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(11, 11, 11);</string>
+     </property>
+     <property name="showGrid">
+      <bool>true</bool>
+     </property>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>190</number>
+     </attribute>
+     <attribute name="horizontalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>모델</string>
+      </property>
+      <property name="font">
+       <font>
+        <hintingpreference>PreferVerticalHinting</hintingpreference>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>판매량</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>점유율</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_18">
+    <widget class="QTableWidget" name="domesticTable">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>0</y>
+       <width>811</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(3, 3, 3);</string>
+     </property>
+     <property name="showGrid">
+      <bool>true</bool>
+     </property>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>190</number>
+     </attribute>
+     <attribute name="horizontalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>국산차</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="textAlignment">
+       <set>AlignLeading|AlignVCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>총합 : </string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="textAlignment">
+       <set>AlignTrailing|AlignVCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>대</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="textAlignment">
+       <set>AlignTrailing|AlignVCenter</set>
+      </property>
+     </column>
+    </widget>
+    <widget class="QTableWidget" name="overseasTable">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>270</y>
+       <width>811</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(3, 3, 3);</string>
+     </property>
+     <property name="showGrid">
+      <bool>true</bool>
+     </property>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>190</number>
+     </attribute>
+     <attribute name="horizontalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>수입차</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="textAlignment">
+       <set>AlignLeading|AlignVCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>총합 :</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="textAlignment">
+       <set>AlignTrailing|AlignVCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>대</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <hintingpreference>PreferVerticalHinting</hintingpreference>
+       </font>
+      </property>
+      <property name="textAlignment">
+       <set>AlignTrailing|AlignVCenter</set>
+      </property>
+     </column>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>monthIndex</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Widget</receiver>
+   <slot>monthIndexChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>468</x>
+     <y>82</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>497</x>
+     <y>84</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>searchButtion</sender>
+   <signal>clicked()</signal>
+   <receiver>Widget</receiver>
+   <slot>searchButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>630</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>949</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>durationPick</sender>
+   <signal>clicked()</signal>
+   <receiver>Widget</receiver>
+   <slot>durationPickButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>674</x>
+     <y>32</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1261</x>
+     <y>200</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>monthPick</sender>
+   <signal>clicked()</signal>
+   <receiver>Widget</receiver>
+   <slot>hyundaiButttonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>176</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1090</x>
+     <y>110</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>brandTapClicked()</slot>
+  <slot>monthIndexChanged()</slot>
+  <slot>searchButtonClicked()</slot>
+  <slot>monthPickButtonClicked()</slot>
+  <slot>durationPickButtonClicked()</slot>
+  <slot>hyundaiButttonClicked()</slot>
+ </slots>
+</ui>

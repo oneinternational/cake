@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/audi.png</file>
+        <file>resources/benz.png</file>
+        <file>resources/bmw.png</file>
+        <file>resources/chevolet.png</file>
+        <file>resources/doyota.png</file>
+        <file>resources/genesis.png</file>
+        <file>resources/hyndai.gif</file>
+        <file>resources/kg.png</file>
+        <file>resources/kia.png</file>
+        <file>resources/lexus.png</file>
+        <file>resources/porsche.png</file>
+        <file>resources/renault.png</file>
+    </qresource>
+</RCC>
